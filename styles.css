@@ -13,8 +13,12 @@
 
 .header {
     background-color: white;
-    grid-column: 2;
+    padding: 10px 25px 10px 25px;
+    grid-column: 2 / -1;
     grid-row: 1;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1.5fr;
+    grid-template-rows: 1fr 2fr;
 }
 
 .sidebar {
@@ -46,4 +50,52 @@
 .menu-items2 {
     grid-column: 1;
     grid-row: 3;
+}
+
+.search {
+    grid-column: 1 / 3;
+    grid-row: 1;
+    display: grid;
+    align-items: center;
+    padding: 0 15px 0 15px;
+    gap: 10px;
+    grid-template-columns: 1fr 10fr;
+}
+
+.user-greet {
+    grid-column: 1;
+    grid-row: 2;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 4fr;
+    gap: 10px;
+    padding: 0 15px 0 15px;
+}
+
+.account {
+    grid-column: 3;
+    grid-row: 1;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 0 15px 0 15px;
+}
+
+.buttons {
+    grid-column: 3;
+    grid-row: 2;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 0 15px 0 15px;
+}
+
+.search > button {
+    grid-column: 1;
+}
+
+.search > input {
+    grid-column: 2;
 }
