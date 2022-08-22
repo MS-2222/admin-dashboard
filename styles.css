@@ -35,6 +35,11 @@
     background-color: rgb(203, 203, 212);
     grid-column: 2 / -1;
     grid-row: 2 / -1;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 1fr 5fr 1fr 5fr;
+    padding: 20px;
+    gap: 20px;
 }
 
 .branding {
@@ -77,6 +82,7 @@
     grid-row: 1;
     display: grid;
     align-items: center;
+    justify-items: end;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
     padding: 0 15px 0 15px;
@@ -98,4 +104,55 @@
 
 .search > input {
     grid-column: 2;
+}
+
+.your-projects {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.announcements {
+    grid-column: 2;
+    grid-row: 1;
+    padding-bottom: 5px;
+}
+
+.trending {
+    grid-column: 2;
+    grid-row: 3;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.projects-container {
+    grid-column: 1;
+    grid-row: 2 / -1;
+    display: grid;
+    gap: 20px;
+}
+
+.annoucement-card {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.trending-card {
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.trend-user {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.announcement-card, .trending-card, .project-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.project-card {
+    border-left: solid yellow 10px;
+    
 }
