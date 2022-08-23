@@ -129,6 +129,7 @@
     grid-row: 2 / -1;
     display: grid;
     gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .annoucement-card {
@@ -154,5 +155,6 @@
 
 .project-card {
     border-left: solid yellow 10px;
-    
+    min-height: 200px;
+
 }
