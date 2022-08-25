@@ -59,8 +59,9 @@
     grid-row: 2;
     display: grid;
     gap: 20px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     grid-template-rows: repeat(6, 1fr);
+    align-items: center;
 }
 
 .menu-items2 {
@@ -222,4 +223,69 @@
     display: grid;
     grid-column: 2;
     grid-row: 1;
+}
+
+#profile-icon {
+    display: grid;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#profile-text {
+    display: grid;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#message-icon {
+    display: grid;
+    grid-column: 1;
+    grid-row: 3;
+}
+
+#message-text {
+    display: grid;
+    grid-column: 2;
+    grid-row: 3;
+}
+
+#history-icon {
+    display: grid;
+    grid-column: 1;
+    grid-row: 4;
+}
+
+#history-text {
+    display: grid;
+    grid-column: 2;
+    grid-row: 4;
+}
+
+#tasks-icon {
+    display: grid;
+    grid-column: 1;
+    grid-row: 5;
+}
+
+#tasks-text {
+    display: grid;
+    grid-column: 2;
+    grid-row: 5;
+}
+
+#communities-icon {
+    display: grid;
+    grid-column: 1;
+    grid-row: 6;
+}
+
+#communities-text {
+    display: grid;
+    grid-column: 2;
+    grid-row: 6;
+}
+
+.branding {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
 }
